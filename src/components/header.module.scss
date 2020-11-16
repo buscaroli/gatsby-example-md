@@ -1,0 +1,32 @@
+$color-highlight: teal;
+$color-secondary: darkslategrey;
+
+.link {
+    color: $color-secondary;
+
+    &:hover {
+        color:$color-highlight;
+    }
+}
+
+.header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin-left: 0;
+    
+    
+    
+    & ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: flex-start;
+        margin: 0 0;
+
+        & li {
+            margin-right: 1.5rem;
+
+        }
+    }
+}
+

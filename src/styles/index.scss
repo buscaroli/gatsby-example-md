@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit; /* will be inherited so entering it in the body */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
