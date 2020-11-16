@@ -18,6 +18,7 @@ function BlogPage() {
                         fields {
                             slug
                         }
+                        id
                     }
                 }
             }
@@ -30,7 +31,7 @@ function BlogPage() {
             <ul>
                 {data.allMarkdownRemark.edges.map(edge => {
                     return(
-                        <li>
+                        <li key={edge.node.id}>
                             <Link to={`/blog/${edge.node.fields.slug}`}>
                                 <h3>Title: {edge.node.frontmatter.title}</h3>
                                 <p>{edge.node.excerpt.slice(0, 30)}...</p>
