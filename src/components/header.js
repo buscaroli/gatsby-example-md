@@ -8,6 +8,7 @@ function Header() {
         <header className={headerStyles.header}>
             <ul>
                 <li><Link className={headerStyles.link} to='/'>Home</Link></li>
+                <li><Link className={headerStyles.link} to='/pets'>Pets</Link></li>
                 <li><Link className={headerStyles.link} to='/about'>About</Link></li>
                 <li><Link className={headerStyles.link} to='/blog'>Blog</Link></li>
             </ul>

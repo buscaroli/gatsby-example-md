@@ -4,7 +4,8 @@ module.exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions
 
     // The following log shows the type of all the files in src/
-    //console.log(node.internal.type)
+    // console.log(node.internal.type)
+    console.log(node.internal)
     if (node.internal.type === 'MarkdownRemark') {
         const slug = path.basename(node.fileAbsolutePath, '.md')
 

@@ -6,7 +6,8 @@ import Layout from '../components/layout'
 function BlogPage() {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark (filter: {fileAbsolutePath: {regex: "\/posts/"}}) 
+            {
                 edges {
                     node {
                         frontmatter {

@@ -12,12 +12,22 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-image',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'src',
-        path: `${__dirname}/src/`
+        name: 'posts',
+        path: `${__dirname}/src/posts`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pets',
+        path: `${__dirname}/src/pets`
       }
     },
     'gatsby-plugin-sharp',
