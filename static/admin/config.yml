@@ -4,3 +4,13 @@ backend:
   
 media_folder: static/pets
 public_folder: /pets
+
+collections:
+  - name: "pets"
+    label: "Aggiungi Foto"
+    folder: "pets/"
+    create: true
+    widget: "image"
+    delete: false
+    editor:
+      preview: false
