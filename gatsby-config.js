@@ -28,7 +28,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pets',
-        path: `${__dirname}/static/src/pets`
+        path: `${__dirname}/static/pets`
       }
     },
     'gatsby-plugin-sharp',
