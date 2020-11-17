@@ -2,13 +2,13 @@ backend:
   name: git-gateway
   branch: netlifyCMS
   
-media_folder: /src/pets
-public_folder: /src/pets
+media_folder: /pets
+public_folder: /pets
 
 collections:
   - name: "pets"
-    label: "Cuccioli"
-    folder: "/src/pets/"
+    label: "Aggiungi Foto"
+    folder: "pets/"
     create: true
     widget: "image"
     delete: false
