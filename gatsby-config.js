@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     title: 'Gatsby training ground',
     author: 'Me, yes I said me'
