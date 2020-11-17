@@ -1,18 +1,6 @@
 backend:
   name: git-gateway
-  branch: netlifyCMS
+  branch: main
   
-media_folder: /src/pets
-public_folder: /src/pets
-
-collections:
-  - name: "pets"
-    label: "Aggiungi Foto"
-    folder: "pets/"
-    create: true
-    widget: "image"
-    delete: false
-    editor:
-      preview: false
-    fields:
-      - { label: "Foto", name: "Nome", widget: "image" }
+media_folder: static/pets
+public_folder: /pets
