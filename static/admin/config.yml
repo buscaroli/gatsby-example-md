@@ -15,4 +15,4 @@ collections:
     editor:
       preview: false
     fields:
-      - { widget: "image" }
+      - { name: "foto", widget: "image" }
