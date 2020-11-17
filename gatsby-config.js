@@ -11,6 +11,7 @@ module.exports = {
     author: 'Me, yes I said me'
   },
   plugins: [
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-sass',
     'gatsby-image',
     'gatsby-transformer-sharp',
